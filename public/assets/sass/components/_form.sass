@@ -1,0 +1,88 @@
+/* form css start */
+.form-control
+  padding: 10px 20px
+  border: 1px solid $border-color
+  width: 100%
+  background-color: transparent
+  +placeholder(rgba(#ffffff, 0.7))
+  +border-radius(3px)
+  color: $heading-color
+  min-height: 50px
+  &:focus
+    box-shadow: 0 2px 5px rgba($base-color, 0.5)
+    border-color: $base-color
+    background-color: transparent
+    color: #ffffff
+select
+  padding: 10px 20px
+  width: 100%
+  border: 1px solid $border-color
+  cursor: pointer
+  color: $para-color
+  background-color: transparent
+  box-shadow: 0 0 5px rgba(#000000, 0.05)
+  height: 50px
+  +border-radius(4px)
+  option
+    background-color: $base-color
+    padding: 10px 0
+    display: block
+    border-top: 1px solid #e5e5e5
+textarea
+  min-height: 150px !important
+  resize: none
+  width: 100%
+label
+  color: darken(#fff, 20%)
+  margin-bottom: 10px
+  font-family: $heading-font
+  font-size: 14px
+  font-weight: 600
+.form-check-input
+  margin-top: 8px
+.custom-checkbox
+  display: flex
+  align-items: center
+  input
+    padding: 0
+    height: initial
+    width: initial
+    margin-bottom: 0
+    display: none
+    cursor: pointer
+  label
+    position: relative
+    cursor: pointer
+    font-size: 14px
+    margin-bottom: 0
+    &::before
+      content: ''
+      -webkit-appearance: none
+      background-color: transparent
+      border: 1px solid #e5e5e5
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+      padding: 6px
+      display: inline-block
+      position: relative
+      vertical-align: middle
+      cursor: pointer
+      margin-right: 8px
+.custom-checkbox input:checked + label::after
+  content: ''
+  display: block
+  position: absolute
+  top: 7px
+  left: 5px
+  width: 5px
+  height: 8px
+  border: solid #0079bf
+  border-width: 0 2px 2px 0
+  transform: rotate(45deg)
+
+input[type="text"]:read-only,
+input[type="email"]:read-only,
+input[type="text"]:disabled,
+input[type="email"]:disabled
+  background-color: rgba($base-color, 0.35)
+  border-color: $base-color
+/* form css end*/

@@ -1,0 +1,166 @@
+/* table css start */
+.table 
+  &.white-space-nowrap 
+    white-space: nowrap
+  &.style--two
+    background-color: #000000
+    +border-radius(8px)
+    overflow: hidden
+    box-shadow: 0 5px 5px 0 rgba($base-color, 0.25)
+    thead 
+      background-color: $base-color
+      tr 
+        th 
+          border-top: none
+          border-bottom: none
+          color: #000000
+          text-align: center
+          padding: 10px 20px
+          &:first-child
+            text-align: left
+          &:last-child
+            text-align: right
+    tr 
+      th, td 
+        font-size: 14px
+        border-top-color: rgba($base-color, 0.25)
+    tbody 
+      tr 
+        td 
+          text-align: center
+          color: $para-color
+          padding: 15px 20px
+          vertical-align: middle
+          font-size: 15px
+          &:first-child
+            text-align: left
+          &:last-child
+            text-align: right
+        &:first-child
+          td 
+            border-top: none
+  .user 
+    display: flex
+    align-items: center
+    .thumb 
+      width: 45px 
+      height: 45px 
+      border: 2px solid #ffffff
+      overflow: hidden
+      +border-radius(50%)
+      box-shadow: 0 5px 10px rgba(#000000, 0.15)
+      margin-right: 10px
+      img 
+        width: inherit
+        height: inherit
+.table-striped tbody tr:nth-of-type(odd)
+  background-color: #6e41ff0f
+
+.badge
+  font-weight: 400
+  padding: 4px 10px
+.icon-btn 
+  width: 30px 
+  height: 30px
+  display: inline-block
+  text-align: center
+  line-height: 30px
+  +border-radius(3px)
+  box-shadow: 0 3px 5px rgba(#000000, 0.25)
+  font-size: 14px
+// table responsive 
+[data-label]
+  position: relative
+  &::before 
+    position: absolute
+    content: attr(data-label)
+    font-weight: 700 
+    color: #ffffff 
+    top: 0 
+    left: 0
+    padding: 13px 15px
+    display: none
+    font-size: 12px
+.table-responsive--lg
+  @media (max-width: 1199px)
+    thead 
+      display: none
+    tbody 
+      tr
+        &:nth-child(odd)
+          background-color: #232323
+    tr 
+      th, td 
+        display: block
+        padding-left: 45%!important
+        text-align: right!important
+        border-top: 1px solid #3e3e3e !important
+    .user
+      justify-content: flex-end
+    [data-label]
+      &::before
+        display: block
+.table-responsive--md
+  @media (max-width: 991px)
+    thead 
+      display: none
+    tbody 
+      tr
+        &:nth-child(odd)
+          background-color: #232323
+    tr 
+      th, td 
+        display: block
+        padding-left: 45%!important
+        text-align: right!important
+        border-top: 1px solid #3e3e3e !important
+    .user
+      justify-content: flex-end
+    [data-label]
+      &::before
+        display: block
+.table-responsive--sm
+  @media (max-width: 767px)
+    thead 
+      display: none
+    tbody 
+      tr
+        &:nth-child(odd)
+          background-color: #232323
+    tr 
+      th, td 
+        display: block
+        padding-left: 45%!important
+        text-align: right!important
+        border-top: 1px solid #3e3e3e !important
+    .user
+      justify-content: flex-end
+    [data-label]
+      &::before
+        display: block
+.table-responsive--xs
+  @media (max-width: 575px)
+    thead 
+      display: none
+    tbody 
+      tr
+        &:nth-child(odd)
+          background-color: #232323
+    tr 
+      th, td 
+        display: block
+        padding-left: 45%!important
+        text-align: right!important
+        border-top: 1px solid #3e3e3e !important
+    .user
+      justify-content: flex-end
+    [data-label]
+      &::before
+        display: block
+*[class*="table-responsive--"]
+  &.data-label--none 
+    @media (max-width: 1199px)
+      tr
+        th, td
+          padding-left: .75rem
+/* table css end */

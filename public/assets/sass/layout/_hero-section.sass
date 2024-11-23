@@ -1,0 +1,47 @@
+/* hero css start */
+.hero 
+  padding-top: 270px 
+  padding-bottom: 210px
+  position: relative
+  @media (max-width: 1199px)
+    padding-top: 200px 
+    padding-bottom: 130px 
+  &::before
+    position: absolute
+    content: '' 
+    top: 0
+    left: 0
+    width: 100% 
+    height: 100% 
+    background-color: #000000
+    opacity: 0.5 
+    display: none 
+    @media (max-width: 1199px)
+      display: block
+  &__title 
+    font-size: 58px
+    @media (max-width: 1199px)
+      font-size: 48px
+    @media (max-width: 767px)
+      font-size: 36px
+/* hero css end */
+
+
+/* inner-hero css start */
+.inner-hero 
+  padding-top: 200px 
+  padding-bottom: 100px
+  position: relative
+  @media (max-width: 1199px)
+    padding-top: 150px
+    padding-bottom: 70px
+  &::before 
+    position: absolute
+    content: '' 
+    top: 0
+    left: 0
+    width: 100% 
+    height: 100% 
+    background-color: #000000
+    opacity: 0.25
+/* inner-hero css end */

@@ -1,0 +1,55 @@
+/* profile css start */
+$color-light: #babbbc
+$color-default-border: rgba(24, 28, 33, 0.1)
+$color-default-background: rgba(0, 0, 0, 0)
+$color-default-text: #4e5155
+$color-link-hover: #f7a139
+$color-link-active: #007bff
+$color-white: #fff
+$color-methods: #cca354
+
+.ui-w-80
+  width: 80px !important
+  height: auto
+
+.btn-default
+  border-color: $color-default-border
+  background: $color-default-background
+  color: $color-default-text
+
+.text-light
+  color: $color-light
+
+.row-bordered
+  overflow: hidden
+
+.account-settings-fileinput
+  position: absolute
+  visibility: hidden
+  width: 1px
+  height: 1px
+  opacity: 0
+
+.account-settings-links
+  a
+    display: block
+    padding: 10px 15px
+    color: $color-white
+    text-decoration: none
+    transition: background-color 0.3s ease
+
+    &:hover
+      background-color: $color-link-hover
+      border-radius: 10px
+
+    &.active
+      background-color: $color-link-active
+      color: $color-white
+      border-radius: 10px
+
+.methods h3
+  color: $color-methods
+
+.account-section:target
+  display: block
+/* profile css end */

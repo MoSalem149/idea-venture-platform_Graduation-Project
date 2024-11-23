@@ -1,0 +1,608 @@
+@import ./_reset
+/* global css strat */
+.container
+  @media (min-width: 1200px)
+    max-width: 1360px
+
+// margin global css
+.mt-15
+  margin-top: 15px
+.mt-20
+  margin-top: 20px
+.mt-30 
+  margin-top: 30px
+.mt-40 
+  margin-top: 40px
+.mt-50 
+  margin-top: 50px
+.mt-80 
+  margin-top: 80px
+
+.mb-15
+  margin-bottom: 15px
+.mb-20
+  margin-bottom: 20px
+.mb-30
+  margin-bottom: 30px
+.mb-40 
+  margin-bottom: 40px
+.mb-50 
+  margin-bottom: 50px
+.mb-115
+  margin-bottom: 115px
+.mb-none-30
+  margin-bottom: -30px
+.mb-none-40
+  margin-bottom: -40px
+.mb-none-50
+  margin-bottom: -50px
+.mt-minus-100 
+  margin-top: -100px
+.mb-none-115
+  margin-bottom: -115px
+// padding global css
+.pt-60
+  padding-top: 60px
+.pb-60
+  padding-bottom: 60px
+.pt-120 
+  padding-top: 120px
+  @media (max-width: 991px)
+    padding-top: 90px
+  @media (max-width: 575px)
+    padding-top: 80px
+.pb-120 
+  padding-bottom: 120px
+  @media (max-width: 991px)
+    padding-bottom: 90px
+  @media (max-width: 575px)
+    padding-bottom: 80px
+.pt-150 
+  padding-top: 150px
+  @media (max-width: 1199px)
+    padding-top: 120px
+  @media (max-width: 991px)
+    padding-top: 90px
+  @media (max-width: 575px)
+    padding-top: 80px
+.pb-150 
+  padding-bottom: 150px
+  @media (max-width: 1199px)
+    padding-bottom: 120px
+  @media (max-width: 991px)
+    padding-bottom: 90px
+  @media (max-width: 575px)
+    padding-bottom: 80px
+.mt-100 
+  margin-top: 100px
+
+
+.bg_img 
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.background-position-y-top 
+  background-position-y: top !important
+.background-position-y-bottom
+  background-position-y: bottom !important
+.background-position-y-center
+  background-position-y: center !important
+
+
+
+.base--bg
+  background-color: $base-color !important
+.base--bg-two
+  background-color: $base-color-two !important
+
+.bg--1
+  background-color: #f05454!important
+.bg--2 
+  background-color: #403DEE!important
+.bg--3
+  background-color: #ED1568!important
+.bg--4 
+  background-color: #403DEE!important
+
+.border-radius--5 
+  +border-radius(5px !important)
+.border-radius--10
+  +border-radius(10px !important)
+.z-index-2 
+  z-index: 2
+.overlay--one
+  position: relative
+  z-index: 9
+  &::before 
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #000000
+    opacity: 0.75
+    z-index: -1
+.overlay--radial
+  position: relative
+  z-index: 9
+  &::before 
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: radial-gradient( #000000, rgba(#000000, 0.5) )
+    opacity: 0.95
+    z-index: -1
+.base--color
+  color: $base-color !important
+.p--color 
+  color: $para-color !important
+.h--color 
+  color: $heading-color !important
+.nice-select
+  float: none
+  width: 100%
+  min-height: 50px
+  line-height: 50px
+  +border-radius(3px)
+  .list 
+    width: 100%
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.15)
+.para-white 
+  color: #e6e6e6!important
+.heading--color 
+  color: #363636!important
+.section--bg
+  background-color: #f9f9f9
+.section--img 
+  position: absolute
+  top: 0
+  left: 0 
+  width: 100% 
+  height: 450px
+  z-index: -1
+.bg--base 
+  background-color: $base-color !important
+.text-line-1
+  +text-line-1
+.text-line-2
+  +text-line-2
+.text-line-3
+  +text-line-3
+.slick-arrow 
+  cursor: pointer
+.section-header
+  margin-bottom: 55px
+  margin-top: -8px
+  @media (max-width: 991px)
+    margin-bottom: 50px
+.section-top-title
+  font-size: 18px
+  font-family: $para-font
+  color: $base-color
+  text-transform: capitalize
+  @media (max-width: 767px)
+    font-size: 20px 
+  @media (max-width: 575px)
+    font-size: 18px
+  @media (max-width: 575px)
+    font-size: 16px
+.section-title
+  font-size: 44px
+  text-transform: capitalize
+  @media (max-width: 767px)
+    font-size: 28px
+  @media (max-width: 440px)
+    font-size: 24px
+  &.has--border 
+    position: relative
+    padding-bottom: 10px
+    &::after 
+      position: absolute
+      content: ''
+      bottom: 0 
+      left: 50% 
+      width: 50px 
+      margin-left: -25px
+      height: 2px 
+      background-color: $base-color 
+.section-title + p 
+  margin-top: 15px
+.box-header 
+  .title 
+    font-size: 32px
+    @media (max-width: 320px)
+      font-size: 28px
+.border-radius-100 
+  +border-radius(50%!important)
+.has-link 
+  position: relative
+.item-link 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100% 
+  height: 100%
+.text-white 
+  * 
+    color: #ffffff !important
+.hover--effect-1
+  +transition(all 0.3s)
+  box-shadow: $shadow
+  &:hover 
+    +transform(translateY(-5px))
+    box-shadow: $shadow-two
+.video-button
+  position: absolute
+  width: 105px
+  height: 105px
+  color: #ffffff
+  +border-radius(50%)
+  background-color: $base-color
+  +d-flex 
+  justify-content: center
+  align-items: center
+  +animation(pulse 2000ms linear infinite)
+  &:hover 
+    color: #ffffff
+  &::before, &::after 
+    position: absolute
+    content: ""
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    border-radius: 74px
+    background-color: $base-color
+    opacity: 0.15
+    z-index: -10
+  &::before
+    z-index: -10
+    +animation(inner-ripple 2000ms linear infinite)
+  &::after
+    z-index: -10
+    +animation(outer-ripple 2000ms linear infinite)
+  i 
+    font-size: 32px
++keyframes(outer-ripple)
+  0%
+    +transform(scale(1))
+    opacity: 0.5
+  80%
+    +transform(scale(1.5))
+    opacity: 0
+  100%
+    +transform(scale(2.5))
+    opacity: 0
+
++keyframes(inner-ripple)
+  0%
+    +transform(scale(1))
+    opacity: 0.5
+  30%
+    +transform(scale(1))
+    opacity: 0.5
+  100%
+    +transform(scale(1.5))
+    opacity: 0
+.text-sm 
+  font-size: 12px !important
+.text-md 
+  font-size: 14px !important
+.card 
+  box-shadow: 0 0 15px rgba($base-color, 0.35)
+  background-color: #000000
+  .table, .table.style--two
+    box-shadow: none
+  .card-header 
+    background-color: #000000
+  &.style--two 
+    border: none
+    > .card-header 
+        background-color: $bg-one
+  
+.badge 
+  font-weight: 400
+  padding: 4px 10px
+.nav-tabs 
+  padding: 0 30px
+  background-color: #ffffff
+  border: 1px solid #e5e5e5
+  +border-radius(5px)
+  &.custom--style 
+    background-color: transparent
+    .nav-item 
+      .nav-link 
+        padding: 15px 20px
+        border: none 
+        border-bottom: 2px solid transparent 
+        color: $heading-color
+        font-size: 14px 
+        text-transform: uppercase
+        +transition(all 0.3s)
+        &.active 
+          border-color: $base-color
+          color: $base-color 
+  &.custom--style-two
+    background-color: transparent
+    border: none 
+    .nav-item 
+      margin: 5px 10px
+      .nav-link 
+        padding: 8px 20px
+        border: 1px solid $border-color
+        color: $para-color
+        font-size: 14px 
+        +border-radius(3px)
+        +transition(all 0.3s)
+        &.active 
+          border-color: $base-color
+          color: #ffffff
+          background-color: $base-color
+.cmn-list
+  margin-top: 20px
+  li+li 
+    margin-top: 15px
+  li 
+    position: relative
+    padding-left: 40px
+    &::before 
+      position: absolute
+      content: ''
+      top: 5px
+      left: 0
+      width: 20px
+      height: 10px
+      border-left: 1px solid $base-color
+      border-bottom: 1px solid $base-color
+      +transform(rotate(-45deg))
+.cmn-list-2
+  margin-top: 20px
+  li+li 
+    margin-top: 10px
+  li 
+    position: relative
+    padding-left: 45px
+    &:nth-last-of-type(3n+3)
+      &::before 
+        border-color: #a22546 
+    &:nth-last-of-type(3n+2)
+      &::before 
+        border-color: #f7a139
+    &:nth-last-of-type(3n+1)
+      &::before 
+        border-color: #3097d1
+    &::before 
+      position: absolute
+      content: ''
+      top: 5px
+      left: 0
+      width: 20px
+      height: 10px
+      border-left: 1px solid red
+      border-bottom: 1px solid red
+      +transform(rotate(-45deg))
+.number-list--style 
+  list-style-type: decimal
+  padding-left: 15px
+  li + li 
+    margin-top: 10px
+  li 
+    span 
+      font-weight: 500 
+      color: $base-color
+.disc-list--style 
+  list-style-type: disc
+  padding-left: 15px
+  li + li 
+    margin-top: 10px
+.pagination
+  margin-top: 50px
+  li+li 
+    margin-left: 10px
+  li 
+    &.disabled 
+      +border-radius(3px!important)
+      .page-link 
+        background-color: $base-color
+    &.active 
+      .page-link
+        background-color: $base-color 
+        border-color: $base-color
+        color: #ffffff
+    .page-link
+      border: 1px solid $border-color
+      +border-radius(3px!important)
+      padding: 12px 20px
+      background-color: transparent
+      color: $para-color
+      font-weight: 700
+      &:hover 
+        background-color: $base-color 
+        border-color: $base-color
+        color: #ffffff
+.cmn-accordion 
+  .card+.card
+    margin-top: 15px
+  .card 
+    border: none
+    background-color: #000000
+    +border-radius(5px !important)
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1)
+  .card-header 
+    background-color: transparent
+    padding: 0
+    margin-bottom: 0!important
+    border: 1px solid $border-color
+    +border-radius(5px!important)
+    .btn
+      background-color: $base-color
+      padding: 15px 20px
+      display: inline-flex
+      display: -ms-inline-flexbox
+      display: -webkit-inline-flex
+      align-items: center
+      +transition(all 0.3s)
+      &.collapsed 
+        background-color: $bg-two
+      &:hover, &:focus
+        text-decoration: none
+        box-shadow: none
+      i 
+        color: $heading-color 
+        font-size: 24px
+      span 
+        color: $heading-color
+        font-size: 16px
+        padding-left: 15px
+        @media (max-width: 767px)
+          font-size: 16px
+  .card-body 
+    border-top: none
+    padding: 20px 30px
+    background-color: $bg-two
+
+blockquote
+  p 
+    font-weight: 700
+    font-size: 24px
+    color: #ffffff
+input:focus,
+textarea:focus,
+.nice-select.open
+  border-color: $base-color
+
+.page-breadcrumb 
+  +d-flex
+  margin-top: 10px
+  li
+    color: rgba(#ffffff, 0.8)
+    text-transform: capitalize
+    &::after 
+      content: '-'
+      color: #ffffff
+      margin: 0 5px
+    &:first-child
+      &::before 
+        content: "\f015"
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        color: $base-color
+        margin-right: 6px
+    &:last-child
+      &::after 
+        display: none
+    a
+      color: #ffffff
+      text-transform: capitalize
+      &:hover 
+        color: $base-color
+
+.scroll-to-top 
+  height: 60px
+  width: 60px
+  position: fixed
+  bottom: 5%
+  right: 5%
+  display: none
+  z-index: 99999
+  cursor: pointer
+  text-align: center
+  border-radius: 50%
+  background-color: $base-color
+  line-height: 77px
+  box-shadow: 0 5px 15px 0 rgba(#000000, 0.25)
+  .scroll-icon 
+    font-size: 31px
+    color: #ffffff
+    display: inline-block
+    i 
+      +transform(rotate(-45deg))
+
+a[class*='lightcase-icon-'].lightcase-icon-close 
+  top: 100px
+  right: 50px
+
+// preloader css 
++keyframes(preloader-inside-white)
+  0% 
+    +transform(scale(0, 0))
+  100% 
+    +transform(scale(1, 1))
++keyframes(preloader-inside-red)
+  0% 
+    +transform(scale(0, 0))
+  30% 
+    +transform(scale(0, 0))
+  100%
+    +transform(scale(1, 1))
+.preloader 
+  display: flex 
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99999999
+  background: #000000
+  text-align: center
+  .preloader-container 
+    display: inline-block
+    width: 100px
+    height: 100px
+    position: relative
+  .animated-preloader 
+    display: inline-block
+    width: 100px
+    height: 100px
+    position: absolute
+    top: 0
+    left: 0
+    background: $base-color
+    +border-radius(50%)
+    &::after 
+      content: ''
+      display: inline-block
+      width: 100px
+      height: 100px
+      position: absolute
+      top: 0
+      left: 0
+      +border-radius(50%)
+      background: darken($base-color, 20%)
+      -webkit-animation: preloader-inside-white 1s ease-in-out infinite
+      -ms-animation: preloader-inside-white 1s ease-in-out infinite
+      animation: preloader-inside-white 1s ease-in-out infinite
+    &::before 
+      content: ''
+      display: inline-block
+      width: 100px
+      height: 100px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 10
+      +border-radius(50%)
+      background: $base-color
+      -webkit-animation: preloader-inside-red 1s ease-in-out infinite
+      -ms-animation: preloader-inside-red 1s ease-in-out infinite
+      animation: preloader-inside-red 1s ease-in-out infinite
+
+
+a[class*='lightcase-icon-'].lightcase-icon-close
+  top: 100px
+  right: 50px
+  z-index: 9999999999
+#lightcase-overlay
+  z-index: 99999999
+
+#lightcase-case 
+  z-index: 999999999
+/* global css end */ 

@@ -1,0 +1,86 @@
+/* button css start */
+.cmn-btn 
+  padding: 12px 35px
+  +border-radius(5px)
+  background-color: $base-color
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15)
+  +transition(all 0.3s)
+  color: #000000
+  &:hover 
+    color: #000000
+    background-color: darken($base-color, 10%)
+  &.active 
+    background-color: $bg-one
+.cmn-btn2
+  padding: 12px 35px
+  text-transform: uppercase
+  +border-radius(5px)
+  background-color: $base-color-two
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15)
+  +transition(all 0.3s)
+  color: #000000
+  &:hover 
+    color: #000000
+    background-color: darken($base-color, 5%)
+.border-btn
+  padding: 14px 35px
+  +font(16px, weight("semi"), capitalize)
+  color: $para-color
+  +border-radius(5px)
+  border: 1px solid #e5e5e5
+  +transition(all 0.3s)
+  color: #ffffff
+  &:hover 
+    background-color: $base-color 
+    color: #000000
+    border-color: $base-color
+    box-shadow: $shadow
+.read-btn 
+  padding: 10px 20px
+  min-width: 130px
+  font-size: 14px 
+  font-weight: 600
+  text-transform: uppercase
+  background-color: rgba($base-color, 0.14)
+  color: $base-color
+  text-align: center
+  +border-radius(5px)
+  +transition(all 0.3s)
+  &:hover 
+    background-color: $base-color 
+    color: #ffffff
+
+.btn-group 
+  +d-flex
+  margin-left: -10px
+  margin-right: -10px
+  *[class*="btn"]
+    margin: 5px 10px
+    align-items: center
+    &.d-flex 
+      padding: 8px 35px
+[class*="btn"] 
+  &.btn-md
+    padding: 8px 30px
+  &.btn-sm 
+    padding: 6px 20px
+
+.action-btn 
+  padding: 5px 15px
+  font-weight: 600
+  background-color: #ffffff
+  color: $base-color
+  font-size: 14px
+  +border-radius(5px)
+
+.bg-btn 
+  border: 2px solid #ffffff
+  color: #ffffff
+  padding: 12px 25px
+  &:hover 
+    background-color: $bg-one 
+    color: #000000
+    border-color: $bg-one
+/* button css end */
+
+

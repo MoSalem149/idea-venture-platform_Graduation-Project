@@ -1,0 +1,45 @@
+
+
+.Sidebar a:hover {
+    background-color: #dfac4d;
+    border-radius: 10px;
+}
+
+/* Style for the active tab link */
+.Sidebar a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.Sidebar a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+}
+.notice{
+    background-color: #101113;
+    color: white;
+    border: solid;
+    border-color: #000000;
+    border-radius: 8px;
+    margin-top: 14px;
+}
+.Sidebar{
+    background-color: #0a0a0a;
+    padding: 4px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    width: 23%;
+    padding-top: 15px;
+    padding-right: 30px;
+    border-radius: 6px;
+}
+.Sidebar a{
+    min-width: 165px;
+}

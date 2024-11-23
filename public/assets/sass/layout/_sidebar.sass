@@ -1,0 +1,152 @@
+/* sidebar css start */
+.search-from
+  .custom-input-field
+    position: relative
+    input 
+      width: 100%
+      height: 60px
+      +border-radius(0)
+      &:focus 
+        border-color: $base-color
+    i 
+      position: absolute
+      top: 21px
+      right: 20px
+      color: $base-color
+      font-size: 18px
+.sidebar
+  @media (max-width: 991px)
+    margin-top: 65px
+  .widget + .widget 
+    margin-top: 50px
+    @media (max-width: 991px)
+      margin-top: 40px
+  .widget-title 
+    font-size: 24px
+    text-transform: capitalize
+    margin-bottom: 30px
+    position: relative
+    padding-left: 15px
+    &::before 
+      position: absolute
+      content: ''
+      top: 4px
+      left: 0
+      width: 5px
+      height: 23px
+      background-color: $base-color
+  .category-list
+    margin-top: -7px
+    li
+      padding: 10px 0 
+      border-bottom: 1px solid rgba(#ffffff, 0.2)
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+        border-bottom: none
+      a 
+        text-transform: capitalize
+        display: block
+        color: $para-color
+        &:hover 
+          color: $base-color
+  .destination-filter-widget
+    padding: 50px 30px
+    background-color: rgb(234, 241, 253)
+    border: 1px solid rgba(0,0,0,0.1)
+    .widget-title 
+      margin-bottom: 21px
+      padding-left: 0
+      &::before 
+        display: none
+    .form-group, .nice-select
+      margin-bottom: 20px
+    .nice-select, input 
+      background-color: #f5f8fe
+    label 
+      font-weight: 500
+    .cmn-btn
+      padding: 10px 25px 
+      font-size: 14px
+  .sidebar-destination-form
+    .ui-widget 
+      background-color: #b2cdfb
+      border: none
+      height: 3px
+      .ui-slider-range 
+        background-color: $base-color
+    span.ui-slider-handle
+      &:first-child
+        display: none
+      width: 14px
+      height: 14px
+      background-color: $base-color
+      border: none
+      +border-radius(50%)
+    .filter-price-result
+      margin-top: -47px
+      input 
+        background-color: transparent 
+        border: none
+        height: auto
+        padding: 0
+        text-align: right
+    .cmn-btn-border 
+      margin-top: 30px
+  .tag-list
+    margin: -3px -1px
+    a 
+      padding: 10px 20px
+      border: 1px solid rgba(#ffffff, 0.2)
+      font-weight: 500
+      text-transform: capitalize
+      margin: 3px 1px
+      color: $para-color
+      +transition(all 0.3s)
+      &:hover 
+        background-color: $base-color
+        color: #ffffff
+        border-color: $base-color
+  .help-widget
+    padding: 50px 30px
+    background-color: #eaf1fd
+    border: 1px solid rgba(0,0,0,0.1)
+    .widget-title 
+      margin-bottom: 20px
+      padding-left: 0
+      &::before 
+        display: none
+    .cmn-btn 
+      padding: 10px 25px
+      font-size: 14px
+      margin-top: 20px
+.small-post-list 
+  .small-post-single
+    +d-flex
+    padding: 20px 0
+    border-bottom: 1px solid rgba(#ffffff, 0.2)
+    &:first-child
+      padding-top: 0
+    &:last-child
+      padding-bottom: 0 
+      border-bottom: none
+    .thumb
+      width: 70px
+      img 
+        height: 70px
+        object-fit: cover
+        -o-object-fit: cover 
+        object-position: center 
+        -o-object-position: center
+    .content 
+      width: calc(100% - 70px)
+      padding-left: 15px
+      .post-title 
+        a 
+          font-size: 16px
+      .date 
+        font-size: 14px
+        margin-top: 5px
+        color: $para-color
+/* sidebar css end */

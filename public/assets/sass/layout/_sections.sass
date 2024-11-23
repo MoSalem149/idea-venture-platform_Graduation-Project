@@ -1,0 +1,697 @@
+/* cureency section css start */
+.cureency-section 
+  padding: 50px 0
+  background-color: #000000
+  @media (max-width: 991px)
+    border-bottom: 2px solid rgba($base-color, 0.5)
+.cureency-item 
+  position: relative
+  &:last-child
+    &::after 
+      display: none
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    right: 0
+    height: 36px 
+    margin-top: -18px
+    width: 2px 
+    background-color: rgba($base-color, 0.75)
+    @media (max-width: 991px)
+      display: none
+.cureency-card 
+  &__title 
+    font-size: 14px
+  &__amount 
+    font-size: 24px
+/* cureency section css end  */
+
+/* about section css start */
+.about-section 
+  position: relative
+  &::before 
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100% 
+    height: 100% 
+    background-color: #000000
+    opacity: 0.75
+    display: none 
+    @media (max-width: 991px)
+      display: block 
+/* about section css end */
+
+/* package section css start */
+.package-card 
+  padding: 30px 
+  border: 3px solid $base-color 
+  background-color: #000000
+  +border-radius(8px)
+  height: 100%
+  box-shadow: 0 0 15px rgba($base-color, 0.5)
+  +transition(all 0.3s)
+  &:hover 
+    box-shadow: 0 5px 15px rgba($base-color, 0.5)
+    +transform(translateY(-5px))
+  &__title 
+    font-size: 32px 
+  &__features 
+    li 
+      padding: 10px 0
+      border-bottom: 1px solid rgba($base-color, 0.35)
+  &__range 
+    font-family: $heading-font 
+    font-weight: 600 
+    font-size: 24px 
+/* package section css end */
+
+
+/* choose us section css start */
+.choose-card 
+  padding: 30px 
+  background-color: $base-color 
+  background-color: rgba(#000000, 0.5)
+  height: 100% 
+  &__header 
+    +d-flex 
+    align-items: center
+  &__icon 
+    width: 55px 
+    i 
+      font-size: 42px 
+      line-height: 1 
+      color: $base-color
+  &__title 
+    width: calc(100% - 55px) 
+    color: $base-color
+/* choose us section css end */
+
+
+/* profit calculator section css start */
+.profit-calculator-wrapper 
+  padding: 50px 
+  border: 2px solid rgba($base-color, 0.5)
+  +border-radius(5px)
+  background-color: #000000
+  box-shadow: 0 0 15px rgba($base-color, 0.5)
+  @media (max-width: 575px)
+    padding: 30px
+/* profit calculator section css end */
+
+
+/* how work section css start */
+.work-item 
+  position: relative
+  z-index: 1  
+  &:last-child
+    &::before 
+      display: none
+  &::before 
+    position: absolute
+    content: '' 
+    left: 50%
+    top: 55px 
+    width: 450px 
+    height: 2px 
+    border-top: 1px dashed $base-color 
+    z-index: -1
+    @media (max-width: 1199px)
+      width: 350px
+    @media (max-width: 991px)
+      display: none
+.work-card 
+  &__icon 
+    width: 110px 
+    height: 110px 
+    +border-radius(50%)
+    border: 3px solid $base-color 
+    box-shadow: 0 0 15px 3px rgba($base-color, 0.65)
+    margin: 0 auto
+    display: flex 
+    justify-content: center
+    align-items: center
+    background-color: #000000
+    position: relative
+    .step-number 
+      position: absolute
+      top: -3px
+      right: -5px
+      width: 32px 
+      height: 32px 
+      background-color: #000000
+      display: flex 
+      justify-content: center
+      align-items: center
+      font-size: 13px 
+      border: 2px solid $base-color 
+      +border-radius(50%)
+    i 
+      font-size: 44px
+      line-height: 1
+  &__content 
+    margin-top: 35px
+/* how work section css end */
+
+
+/* testimonial section css start */
+.testimonial-card 
+  background-color: rgba($base-color, 0.65)
+  +border-radius(5px)
+  box-shadow: 0 5px 0px $base-color
+  &__content 
+    padding: 30px 30px 60px 30px
+    border-bottom: 1px solid rgba($base-color, 0.5)
+  &__client 
+    padding: 0 30px 20px 30px
+    margin-top: -38px
+    .thumb
+      width: 75px 
+      height: 75px 
+      overflow: hidden
+      border: 3px solid $base-color 
+      +border-radius(50%)
+      margin-left: auto 
+      img 
+        width: inherit 
+        height: inherit 
+        +object-fit
+    .name 
+      font-size: 16px
+    .designation 
+      font-size: 14px 
+.ratings
+  i 
+    color: #e4b332
+    font-size: 14px
+.testimonial-slider
+  .slick-list 
+    margin: -15px  
+  .single-slide
+    margin: 15px  
+  .slick-dots 
+    margin-top: 30px
+    +d-flex 
+    justify-content: center
+    li 
+      margin: 0 5px
+      &.slick-active 
+        button 
+          background-color: $base-color 
+          width: 35px 
+      button 
+        font-size: 0 
+        width: 20px 
+        height: 6px
+        background-color: rgba($base-color, 0.5)
+        +border-radius(999px)
+        +transition(all 0.3s)
+/* testimonial section css end */
+
+
+/* team section css start */
+.team-card 
+  background-color: #343A40
+  padding: 15px 
+  +transition(all 0.3s)
+  +border-radius(5px)
+  &:hover 
+    background-color: $base-color
+    box-shadow: 0 5px 10px 5px rgba($base-color, 0.5)
+    +transform(translateY(-5px))
+  &__thumb 
+    img 
+      width: 100%
+      +border-radius(5px)
+  &__content 
+    padding: 20px 15px 15px 15px
+/* team section css end */
+
+
+/* data section css start */
+#chart > * 
+  color: #ffffff !important
+  fill: #ffffff !important
+.apexcharts-xaxis-label 
+  color: #ffffff !important
+/* data section css end */
+
+
+/* top investor section css start */
+.border-top-1 
+  border-top: 1px solid rgba($base-color, 0.5)
+.investor-card 
+  background-color: #343A40
+  padding: 15px 
+  +d-flex 
+  +transition(all 0.3s)
+  &:hover 
+    background-color: $base-color
+    box-shadow: 0 5px 10px 5px rgba($base-color, 0.5)
+    +transform(translateY(-5px))
+  &__thumb 
+    width: 35% 
+    +border-radius(5px)
+    @media (max-width: 767px)
+      width: 100%
+      min-height: 250px
+  &__content 
+    width: 65%
+    padding: 15px 0 15px 20px
+    @media (max-width: 767px)
+      width: 100%
+/* top investor section css end */
+
+
+/* cta section css start */
+.cta-wrapper 
+  padding: 35px 100px
+  box-shadow: 0 3px 15px rgba($base-color, 0.5)
+  @media (max-width: 767px)
+    padding: 30px 50px
+  @media (max-width: 575px)
+    padding: 30px
+/* cta section css end */
+
+
+/* payment brand section css start */
+.brand-item 
+  padding: 30px
+  +d-flex 
+  justify-content: center
+  align-items: center
+  background-color: #000000
+  border: 2px solid rgba($base-color, 0.5)
+  +border-radius(5px)
+  +transition(all 0.3s)
+  &:hover  
+    border-color: $base-color 
+  img 
+    max-height: 75px
+.payment-slider 
+  .slick-list 
+    margin: -15px
+  .single-slide 
+    margin: 15px 
+/* payment brand section css end */
+
+
+/* blog section css start */
+.blog-card 
+  padding: 15px 
+  +border-radius(8px)
+  background-color: #000000
+  box-shadow: 0 0 0px 2px rgba($base-color, 0.8)
+  &__thumb 
+    img 
+      width: 100%
+      +border-radius(5px)
+  &__content 
+    padding: 20px 15px 15px 15px
+  &__meta 
+    margin: -5px -7px
+    li 
+      margin: 5px 7px
+      font-size: 14px
+      i 
+        color: $base-color 
+        font-size: 18px
+      a 
+        color: $base-color 
+/* blog section css end */
+
+
+/* blog-details-section css start */
+.blog-details__thumb 
+  position: relative
+  max-height: 500px 
+  overflow: hidden
+  img 
+    width: 100%
+  .post__date 
+    position: absolute
+    top: 0
+    left: 0
+    width: 75px
+    text-align: center
+    .date 
+      font-size: 30px
+      font-weight: 700
+      color: #ffffff
+      background-color: $base-color
+      padding: 10px 5px
+      width: 100%
+      line-height: 1
+    .month 
+      background-color: #000000
+      text-transform: uppercase
+      padding: 4px 5px
+      width: 100%
+      line-height: 1
+      font-size: 18px
+.blog-details__content
+  margin-top: 30px
+  p 
+    margin-top: 20px
+  .blog-details__title
+    font-size: 24px
+  blockquote 
+    margin-top: 30px
+    margin-bottom: 0
+blockquote
+  font-size: 18px
+  color: $para-color
+  font-style: italic
+  text-align: center
+  padding: 50px 60px
+  background-color: $base-color 
+  @media (max-width: 575px)
+    padding: 30px 40px
+    font-size: 16px
+.blog-details__footer 
+  text-align: center
+  padding: 50px 0
+  border-bottom: 1px solid rgba(#ffffff, 0.25)
+  .caption 
+    font-size: 24px
+    margin-bottom: 20px
+  .social__links 
+    justify-content: center
+    +d-flex
+    li
+      a 
+        width: 30px
+        height: 30px
+        text-align: center
+        line-height: 30px
+        color: $heading-color
+        &:hover 
+          background-color: $base-color
+          color: #ffffff
+.comments-area 
+  margin-top: 100px
+  margin-right: 30px
+  +border-radius(8px)
+  .title 
+    text-transform: capitalize
+    margin-bottom: 20px
+    font-size: 24px
+.comments-list 
+  .single-comment
+    display: flex
+    flex-wrap: wrap
+    padding: 20px 0
+    border: none
+    &:first-child
+      padding-top: 0
+    &:last-child 
+      padding-bottom: 0
+    &__thumb 
+      width: 100px
+      height: 100px
+      overflow: hidden
+    &__content 
+      width: (calc(100% - 100px))
+      padding-left: 20px
+      @media (max-width: 480px)
+        +flexWidth(100%)
+        padding-left: 0
+        margin-top: 15px
+      .name
+        text-transform: capitalize
+      .date
+        font-size: 14px
+        font-style: italic
+      p 
+        margin-top: 5px
+.reply-btn 
+  width: 28px
+  height: 28px
+  background-color: $base-color
+  color: #ffffff
+  text-align: center
+  line-height: 28px
+  font-size: 13px
+  float: right
+  margin-top: -30px
+  +border-radius(50%)
+  &:hover 
+    background-color: $base-color
+    color: #ffffff
+  i 
+    +transform(rotate(180deg))
+.comment-form-area 
+  margin-top: 70px
+  margin-right: 30px
+  .title 
+    font-size: 24px
+    margin-bottom: 20px
+/* blog-details-section css end */
+
+
+/* subscribe section css start */
+.subscribe-wrapper 
+  padding: 50px 
+  +border-radius(8px)
+  box-shadow: 0 0 10px rgba($base-color, 0.5)
+  @media (max-width: 575px)
+    padding: 30px
+.subscribe-form 
+  +d-flex 
+  .form-control
+    width: calc(100% - 65px)
+    border-right: none 
+  .subscribe-btn
+    width: 65px 
+    background-color: $base-color 
+    color: #000000
+    +border-radius(0 3px 3px 0)
+    i 
+      font-size: 24px 
+      line-height: 1 
+/* subscribe section css end */
+
+
+/* account section css start */
+.account-section 
+  +d-flex 
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  padding: 120px 0
+.account-card
+  background-color: #000000
+  +border-radius(5px)
+  overflow: hidden
+  box-shadow: 0 0 10px 2px rgba($base-color, 0.45)
+  &__header
+    padding: 50px 30px
+    border-bottom: 2px solid rgba($base-color, 0.5)
+  &__body 
+    padding: 30px
+/* account section css end */
+
+
+/* contact-wrapper css start */
+.contact-wrapper 
+  overflow: hidden
+  background-color: #000000
+  box-shadow: 0 5px 15px rgba($base-color, 0.4)
+  +border-radius(5px)
+.contact-form-wrapper 
+  padding: 50px
+  @media (max-width: 575px)
+    padding: 30px
+.contact-item 
+  height: 100%
+  padding: 30px
+  background-color: $base-color 
+  +border-radius(5px)
+  box-shadow: 0 5px 15px rgba($base-color, 0.5)
+  i 
+    color: #000000
+  a 
+    color: $para-color
+    &:hover 
+      color: $base-color
+  h5 
+    color: #000000
+  p, a 
+    color: #252525
+  a:hover 
+    color: #000000
+/* contact-wrapper css end */
+
+
+/* dashboard section css start */
+.d-widget
+  padding: 20px 10px 
+  background-color: $base-color
+  +border-radius(10px)
+  .icon
+    width: 50px 
+    height: 50px 
+    text-align: center
+    line-height: 50px
+    background-color: #000000
+    color: $base-color
+    font-size: 32px
+    +border-radius(5px)
+  .amount 
+    color: $base-color 
+    line-height: 1
+  .caption 
+    font-size: 14px 
+    color: #000000
+    font-weight: 600
+    margin-bottom: 6px
+/* dashboard section css end */
+
+
+/* error-area css start */
+.error-area 
+  min-height: 100vh
+  +d-flex 
+  justify-content: center
+  align-items: center
+  padding: 100px 0
+  .cmn-btn 
+    position: relative
+    z-index: 9
+
+@-webkit-keyframes pulse
+  from
+    opacity: 0.5
+
+  50%
+    opacity: 0.5
+
+@keyframes pulse
+  from
+    opacity: 0.5
+
+  50%
+    opacity: 0.5
+
+#desc
+  margin: 2em 0 1em
+
+.error-num
+  position: relative
+  font-size: 220px
+  font-family: $heading-font
+  letter-spacing: -0.01em
+  line-height: 1
+  color: white
+  -webkit-animation: colorSplit 1.25s steps(2, end) infinite
+  animation: colorSplit 1.25s steps(2, end) infinite
+  @media (max-width: 575px)
+    font-size: 120px
+
+.error-num__clip
+  position: relative
+  font-size: 220px
+  font-family: $heading-font
+  letter-spacing: -0.01em
+  line-height: 1
+  color: white
+  -webkit-animation: colorSplit 1.25s steps(2, end) infinite
+  animation: colorSplit 1.25s steps(2, end) infinite
+  @media (max-width: 575px)
+    font-size: 120px
+
+  &::before
+    position: relative
+    font-size: 220px
+    font-family: $heading-font
+    letter-spacing: -0.01em
+    line-height: 1
+    color: white
+    -webkit-animation: colorSplit 1.25s steps(2, end) infinite
+    animation: colorSplit 1.25s steps(2, end) infinite
+    @media (max-width: 575px)
+      font-size: 120px
+
+.error-num__clip-left
+  position: relative
+  font-size: 10rem
+  font-family: $heading-font
+  letter-spacing: 1px
+  color: white
+  -webkit-animation: colorSplit 1.25s steps(2, end) infinite
+  animation: colorSplit 1.25s steps(2, end) infinite
+
+@-webkit-keyframes colorSplit
+  25%
+    text-shadow: -0.02em 0 0 $base-color, 0.025em 0 0 darken($base-color, 20%)
+
+  75%
+    text-shadow: -0.035em 0 0 $base-color, 0.04em 0 0 darken($base-color, 20%)
+
+@keyframes colorSplit
+  25%
+    text-shadow: -0.02em 0 0 $base-color, 0.025em 0 0 darken($base-color, 20%)
+
+  75%
+    text-shadow: -0.035em 0 0 $base-color, 0.04em 0 0 darken($base-color, 20%)
+
+.error-num__clip
+  position: absolute
+  top: 0
+  left: -2px
+  z-index: 10
+  color: #333
+  overflow: visible
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+  clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+  -webkit-animation: glitch 1s steps(2, start) infinite
+  animation: glitch 1s steps(2, start) infinite
+
+  &::before
+    position: absolute
+    top: 0
+    left: -2px
+    z-index: 10
+    color: #333
+    overflow: visible
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+    clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+    -webkit-animation: glitch 1s steps(2, start) infinite
+    animation: glitch 1s steps(2, start) infinite
+
+.error-num__clip-left
+  position: absolute
+  top: 0
+  left: -2px
+  z-index: 10
+  color: #333
+  overflow: visible
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+  clip-path: polygon(0% 0%, 100% 0, 100% 25%, 0 25%, 0 30%, 100% 30%, 100% 50%, 0 50%, 0 60%, 100% 60%, 100% 65%, 0 65%, 0 80%, 100% 80%, 100% 85%, 0 85%, 0% 0%)
+  -webkit-animation: glitch 1s steps(2, start) infinite
+  animation: glitch 1s steps(2, start) infinite
+
+@-webkit-keyframes glitch
+  30%
+    left: 0
+
+  to
+    left: 0
+
+@keyframes glitch
+  30%
+    left: 0
+
+  to
+    left: 0
+
+.error-num__clip::before, .error-num__clip-left::before
+  content: '404'
+  left: 0.05em
+  color: white
+  z-index: 9
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 26%, 0 26%, 0 29%, 100% 29%, 100% 51%, 0 51%, 0 59%, 100% 59%, 100% 66%, 0 66%, 0 79%, 100% 79%, 100% 86%, 0 86%, 0% 0%)
+  clip-path: polygon(0% 0%, 100% 0, 100% 26%, 0 26%, 0 29%, 100% 29%, 100% 51%, 0 51%, 0 59%, 100% 59%, 100% 66%, 0 66%, 0 79%, 100% 79%, 100% 86%, 0 86%, 0% 0%)
+/* error-area css end */

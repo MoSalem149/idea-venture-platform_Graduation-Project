@@ -1,0 +1,220 @@
+/* header start */
+.header
+  position: fixed
+  top: 0 
+  left: 0 
+  width: 100%
+  z-index: 999
+  &.menu-fixed 
+    .header__top 
+      display: none
+    .header__bottom
+      background-color: #000000
+  &__bottom
+    background-color: rgba(#000000, 0.5)
+    border-bottom: 1px solid rgba(#ffffff, 0.15)
+    +transition(all 0.3s)
+    @media (max-width: 1199px)
+      padding: 10px 0
+  .site-logo
+    img 
+      width: 175px
+      @media (max-width: 1199px)
+        max-width: 150px
+  .main-menu 
+    margin-left: 70px
+    @media (max-width: 1199px)
+      margin-left: 0
+      padding: 15px 0
+    li 
+      position: relative
+      &:last-child
+        &::after 
+          display: none
+      &.menu_has_children
+        position: relative
+        &.open 
+          .sub-menu 
+            display: block
+        >a
+          @media (max-width: 1199px)
+            display: block
+          &::before
+            position: absolute
+            content: "\f107"
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            top: 0
+            right: 0
+            color: #ffffff
+            +transition(all 0.3s)
+            display: none
+            @media (max-width: 1199px)
+              display: block
+              top: 9px
+        &:hover
+          >a::before
+            +transform(rotate(180deg))
+            color: $base-color
+      a
+        padding: 30px 15px 30px 0
+        text-transform: capitalize
+        font-size: 16px
+        color: #ffffff
+        position: relative
+        @media (max-width: 1199px)
+          color: #ffffff
+          padding: 8px 0
+          display: block
+        &:hover,&:focus
+          color: $base-color
+      .sub-menu
+        position: absolute
+        width: 220px
+        top: 105%
+        left: -20px
+        z-index: 9999
+        background-color: $base-color 
+        padding: 10px 0
+        -webkit-box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15)
+        box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15)
+        +border-radius(5px)
+        +transition(all 0.3s)
+        opacity: 0
+        visibility: hidden
+        border: 1px solid #e5e5e5
+        @media (max-width: 1199px)
+          opacity: 1
+          visibility: visible
+          display: none
+          position: static
+          +transition(none)
+          width: 100%
+
+        li
+          border-bottom: 1px dashed rgba(#ffffff, 0.35)
+          &:last-child
+            border-bottom: none
+          a
+            padding: 8px 20px
+            display: block
+            color: #ffffff
+            font-size: 14px
+            &:hover 
+              background-color: rgba(#ffffff, 0.05)
+              color: #ffffff
+              text-decoration: underline
+        li+li
+          margin-left: 0
+      &:hover .sub-menu
+        top: 100%
+        opacity: 1
+        visibility: visible
+    li+li
+      margin-left: 20px
+      @media (max-width: 1199px)
+        margin-left: 0
+  .nav-right
+    margin-left: 30px
+    +d-flex
+    align-items: center
+    @media (max-width: 1199px)
+      margin-left: 0  
+    .select 
+      height: 46px
+    .account-menu 
+      @media (max-width: 1199px)
+        display: none
+.account-menu 
+  &.mobile-acc-menu 
+    display: none 
+    @media (max-width: 1199px)
+      display: inline-block
+      margin-left: auto
+      margin-right: 25px
+  .icon 
+    position: relative 
+    &:hover 
+      .account-submenu 
+        opacity: 1
+        visibility: visible
+        top: 100%
+    i 
+      width: 47px 
+      height: 45px 
+      background-color: $base-color 
+      color: #ffffff
+      display: flex 
+      justify-content: center
+      align-items: center
+      +border-radius(5px)
+      cursor: pointer
+      font-size: 24px
+      @media (max-width: 1199px) 
+        width: 35px 
+        height: 35px 
+        font-size: 20px
+  
+.navbar-collapse 
+  @media (max-width: 1199px)
+    background-color: #000000
+    padding: 0 30px 20px 30px
+  @media (max-width: 767px)
+    max-height: 320px
+    overflow: auto
+.navbar-toggler
+  padding: 0
+  border: none
+  &:focus
+    outline: none
+.menu-toggle
+  margin: 10px 0
+  position: relative
+  display: block
+  width: 35px
+  height: 20px
+  cursor: pointer
+  background: transparent
+  border-top: 2px solid
+  border-bottom: 2px solid
+  color: #ffffff
+  font-size: 0
+  +transition(all 0.25s ease-in-out)
+  cursor: pointer
+  @media (max-width: 1199px)
+    color: #ffffff
+.menu-toggle:before, .menu-toggle:after
+  content: ''
+  display: block
+  width: 100%
+  height: 2px
+  position: absolute
+  top: 50%
+  left: 50%
+  background: currentColor
+  +transform(translate(-50%, -50%))
+  transition: -webkit-transform 0.25s ease-in-out
+  -webkit-transition: -webkit-transform 0.25s ease-in-out
+  -o-transition: -webkit-transform 0.25s ease-in-out
+  transition: transform 0.25s ease-in-out
+  -moz-transition: -webkit-transform 0.25s ease-in-out
+  -ms-transition: -webkit-transform 0.25s ease-in-out
+  @media (max-width: 1199px)
+    background-color: #ffffff
+span.is-active 
+  border-color: transparent
+span.is-active:before
+  +transform(translate(-50%, -50%) rotate(45deg))
+span.is-active:after
+  +transform(translate(-50%, -50%) rotate(-45deg))
+span.menu-toggle:hover 
+  color: #ffffff
+  @media (max-width: 1199px)
+    color: #ffffff
+span.is-active
+  border-color: transparent
+span.is-active:before 
+  +transform(translate(-50%, -50%) rotate(45deg))
+span.is-active:after
+  +transform(translate(-50%, -50%) rotate(-45deg))
+/* header end */
