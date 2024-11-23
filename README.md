@@ -100,7 +100,7 @@ IdeaVenture is a platform connecting entrepreneurs with investors, bridging the 
 
 ![Registration-Page](./README-Assets/Screens/Registration-Page.png)
 
-### Login-Page
+### Login Page
 
 ![Login-Page](./README-Assets/Screens/Login-Page.png)
 
